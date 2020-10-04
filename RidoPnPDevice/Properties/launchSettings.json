@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "RidoPnPDevice": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DeviceConnectionString": "HostName=ridohub.azure-devices.net;DeviceId=acomplexstory;SharedAccessKey=xGkUHfQv6vOkP9lzICNej9kutdo2MpHGmuxPi9+81S8="
+      }
+    }
+  }
+}

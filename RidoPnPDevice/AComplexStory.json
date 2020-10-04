@@ -1,0 +1,43 @@
+{
+  "@context": "dtmi:dtdl:context;2",
+  "@id": "dtmi:dev:tests:AComplexStory;1",
+  "@type": "Interface",
+  "displayName": "Complex Objects",
+  "contents": [
+    {
+      "@type": "Property",
+      "name": "aWritable",
+      "schema": "string",
+      "writable": true
+    },
+    {
+      "@type": "Component",
+      "name": "comp01",
+      "schema": {
+        "@type": "Interface",
+        "@id": "dtmi:dev:tests:ComplexObjects:ComponentInterface;11",
+        "contents": [
+          {
+            "@type": "Property",
+            "name": "AComplexProperty",
+            "writable": true,
+            "schema": {
+              "@type": "Object",
+              "@id": "dtmi:dev:tests:ComplexObjects:ComplexObject;1",
+              "fields": [
+                {
+                  "name": "customerName",
+                  "schema": "string"
+                },
+                {
+                  "name": "customerId",
+                  "schema": "integer"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

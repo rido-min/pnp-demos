@@ -1,0 +1,24 @@
+{
+  "name": "pnp-demos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "repo-convention.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rido-min/pnp-demos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rido-min/pnp-demos/issues"
+  },
+  "homepage": "https://github.com/rido-min/pnp-demos#readme",
+  "dependencies": {
+    "jsonata": "^1.8.3",
+    "mkdirp": "^1.0.4"
+  }
+}
