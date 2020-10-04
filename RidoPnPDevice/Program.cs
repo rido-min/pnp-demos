@@ -10,7 +10,7 @@ namespace RidoPnPDevice
     {
         static async Task Main(string[] args)
         {
-            var cancellationTokenSource = new CancellationTokenSource(5000);
+            var cancellationTokenSource = new CancellationTokenSource(50000);
 
             IConfiguration config = new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
@@ -26,7 +26,7 @@ namespace RidoPnPDevice
             ).CreateLogger<Device>();
 
             await new Device().RunAsync(
-                config.GetValue<string>("DeviceConnectionString"), logger);
+                config.GetValue<string>("DeviceConnectionString"), logger, cancellationTokenSource.Token);
         }
     }
 }
